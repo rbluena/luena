@@ -12,8 +12,7 @@ const config = defineConfig({
   plugins: [
     devtools(),
     nitro({
-      // Dynamically use 'vercel' on Vercel, or fallback to default (node) locally
-      preset: process.env.VERCEL ? "vercel" : undefined,
+      preset: process.env["VERCEL"]! ? "vercel" : "nitro_dev",
 
       // Rollup configuration applies to both environments
       rollupConfig: {
