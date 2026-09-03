@@ -35,12 +35,21 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/70">
-      <div className="mx-auto grid max-w-[1240px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 sm:px-8 md:grid-cols-[auto_1fr_auto]">
-        <a
-          href="#top"
-          className="min-w-0 truncate text-sm font-semibold tracking-tight text-foreground"
-        >
-          {site.name}
+      <div className="mx-auto grid max-w-310 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 sm:px-8 md:grid-cols-[auto_1fr_auto]">
+        <a href="#top" className="flex min-w-0 shrink-0 items-center gap-2">
+          <img
+            src="/favicon-32x32.png"
+            alt={site.name}
+            width={28}
+            height={28}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            className="h-7 w-7 shrink-0"
+          />
+          <span className="min-w-0 truncate text-sm font-semibold tracking-tight text-foregroun hidden md:inline-block">
+            {site.name}
+          </span>
         </a>
 
         <nav aria-label="Primary" className="hidden justify-center md:flex">
