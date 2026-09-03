@@ -34,9 +34,7 @@ export function Footer() {
         </nav>
       </div>
       <div className="mx-auto mt-10 max-w-[1240px] px-5 sm:px-8">
-        <p className="font-mono text-xs text-muted-foreground">
-          © 2026 {site.name}
-        </p>
+        <p className="font-mono text-xs text-muted-foreground">© 2026 {site.name}</p>
       </div>
     </footer>
   );

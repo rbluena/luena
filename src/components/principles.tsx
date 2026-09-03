@@ -25,8 +25,7 @@ export function Principles() {
               ))}
             </ul>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
-              I try to treat these as design constraints rather than things to add at the
-              end.
+              I try to treat these as design constraints rather than things to add at the end.
             </p>
           </Reveal>
         </div>

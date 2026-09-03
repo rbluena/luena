@@ -51,9 +51,7 @@ export function ProjectShowcase({
             {project.highlights.map((h) => (
               <div key={h.title}>
                 <dt className="text-sm font-medium text-foreground">{h.title}</dt>
-                <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  {h.body}
-                </dd>
+                <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">{h.body}</dd>
               </div>
             ))}
           </dl>

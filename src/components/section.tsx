@@ -51,10 +51,7 @@ export function Section({
   className?: string;
 }) {
   return (
-    <section
-      id={id}
-      className={cn("border-t border-border py-20 sm:py-28", className)}
-    >
+    <section id={id} className={cn("border-t border-border py-20 sm:py-28", className)}>
       <div className="mx-auto max-w-[1240px] px-5 sm:px-8">{children}</div>
     </section>
   );
@@ -76,9 +73,7 @@ export function SectionHeader({
         {title}
       </h2>
       {description ? (
-        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-          {description}
-        </p>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">{description}</p>
       ) : null}
     </Reveal>
   );

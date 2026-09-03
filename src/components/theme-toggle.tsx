@@ -14,8 +14,7 @@ const STORAGE_KEY = "theme";
 function applyTheme(theme: Theme) {
   const isDark =
     theme === "dark" ||
-    (theme === "system" &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches);
+    (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
   document.documentElement.classList.toggle("dark", isDark);
   document.documentElement.style.colorScheme = isDark ? "dark" : "light";
 }
@@ -70,9 +69,7 @@ export function ThemeToggle() {
           >
             <Icon className="size-4" aria-hidden="true" />
             <span>{label}</span>
-            {theme === value ? (
-              <span className="ml-auto text-xs text-primary">Active</span>
-            ) : null}
+            {theme === value ? <span className="ml-auto text-xs text-primary">Active</span> : null}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

@@ -11,8 +11,8 @@ export function Contact() {
           Let's build something useful.
         </h2>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          I'm interested in working on products where frontend engineering, AI, and
-          thoughtful product design intersect.
+          I'm interested in working on products where frontend engineering, AI, and thoughtful
+          product design intersect.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -32,10 +32,7 @@ export function Contact() {
         </div>
 
         <p className="mt-8 font-mono text-sm">
-          <a
-            href={site.links.email}
-            className="text-primary underline-offset-4 hover:underline"
-          >
+          <a href={site.links.email} className="text-primary underline-offset-4 hover:underline">
             {site.email}
           </a>
         </p>

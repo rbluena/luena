@@ -57,9 +57,8 @@ export function Hero() {
               <br className="hidden sm:block" /> with thoughtful interfaces.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I design and build polished web applications, browser experiences, and
-              AI-powered workflows — with a focus on usability, architecture, and product
-              impact.
+              I design and build polished web applications, browser experiences, and AI-powered
+              workflows — with a focus on usability, architecture, and product impact.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

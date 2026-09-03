@@ -28,9 +28,7 @@ export function SelectedWork() {
                 className="group block h-full rounded-lg border border-border bg-card p-5 transition-colors duration-200 hover:border-border-strong"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <h4 className="text-base font-medium text-foreground">
-                    {project.name}
-                  </h4>
+                  <h4 className="text-base font-medium text-foreground">{project.name}</h4>
                   <ArrowUpRight
                     className="size-4 shrink-0 text-muted-foreground transition-colors duration-200 group-hover:text-primary"
                     aria-hidden="true"
