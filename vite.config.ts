@@ -12,7 +12,7 @@ const config = defineConfig({
   plugins: [
     devtools(),
     nitro({
-      preset: process.env["VERCEL"] ? "vercel" : undefined,
+      preset: process.env["VERCEL"] ? "vercel" : "node-server",
 
       // Rollup configuration applies to both environments
       rollupConfig: {
