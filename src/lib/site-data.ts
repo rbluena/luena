@@ -18,6 +18,20 @@ export const nav = [
   { label: "Contact", href: "#contact" },
 ];
 
+export interface ProjectData {
+  id: string;
+  name: string;
+  tagline: string;
+  status: "live" | "in-progress" | "shipped";
+  statusLabel: string;
+  tier: "founded" | "professional";
+  bullets?: string[];
+  description?: string;
+  techStack: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+}
+
 export type Project = {
   index: string;
   name: string;
@@ -205,5 +219,95 @@ export const principleDetails = [
   {
     title: "Performance",
     body: "Performance is part of product quality, especially when building interactive applications.",
+  },
+];
+
+export const FOUNDED_PROJECTS: ProjectData[] = [
+  {
+    id: "andika-ai",
+    name: "Andika AI",
+    tagline: "AI writing assistant that lives in every browser input field",
+    status: "live",
+    statusLabel: "Live",
+    tier: "founded",
+    bullets: [
+      "UI injected via Shadow DOM — isolated from host page styles, works on any website",
+      "Provider-agnostic AI routing via OpenRouter and Vercel AI SDK — Claude, Gemini, GPT-4",
+      "Real-time state sync across devices via Convex",
+    ],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Shadow DOM",
+      "Vercel AI SDK",
+      "OpenRouter",
+      "Convex",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://andika.ai",
+    githubUrl: "https://github.com/rbluena/andika-ai",
+  },
+  {
+    id: "gapwise",
+    name: "Gapwise",
+    tagline: "From Reddit pain points to validated business ideas",
+    status: "live",
+    statusLabel: "Live",
+    tier: "founded",
+    bullets: [
+      "AI pipeline using Google Gemini to extract structured insight from unstructured threads",
+      "Real-time collaborative ideation via Convex — live state, no page refresh",
+      "Full loop: discovery → clustering → validation → collaboration",
+    ],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Google Gemini",
+      "Convex",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    liveUrl: "https://gapwise.io",
+    githubUrl: "https://github.com/rbluena/gapwise",
+  },
+];
+
+export const PROFESSIONAL_PROJECTS: ProjectData[] = [
+  {
+    id: "finotify",
+    name: "Finotify",
+    tagline: "Financial automation platform integrating Zapier for real-time account sync",
+    description: "Financial automation platform integrating Zapier for real-time account sync",
+    status: "shipped",
+    statusLabel: "Shipped",
+    tier: "professional",
+    techStack: ["React", "TypeScript", "Zapier API", "Tailwind CSS", "Node.js"],
+    liveUrl: "https://finotify.com",
+    githubUrl: "https://github.com/rbluena/finotify",
+  },
+  {
+    id: "visula",
+    name: "Visula",
+    tagline: "Visual schema design and migration tool with AI-assisted ETL for headless CMSs",
+    description: "Visual schema design and migration tool with AI-assisted ETL for headless CMSs",
+    status: "shipped",
+    statusLabel: "Shipped",
+    tier: "professional",
+    techStack: ["Next.js", "TypeScript", "D3.js", "PostgreSQL", "Tailwind CSS"],
+    liveUrl: "https://visula.dev",
+    githubUrl: "https://github.com/rbluena/visula",
+  },
+  {
+    id: "greenrush",
+    name: "GreenRush",
+    tagline: "Cart, checkout, and Google Maps delivery integration for a medical delivery platform",
+    description:
+      "Cart, checkout, and Google Maps delivery integration for a medical delivery platform",
+    status: "shipped",
+    statusLabel: "Shipped",
+    tier: "professional",
+    techStack: ["React", "TypeScript", "Google Maps API", "Stripe", "Tailwind CSS"],
+    liveUrl: "https://greenrush.delivery",
+    githubUrl: "https://github.com/rbluena/greenrush",
   },
 ];

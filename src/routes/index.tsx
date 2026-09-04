@@ -8,6 +8,7 @@ import { About } from "@/components/about";
 import { Principles } from "@/components/principles";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
+import { ProjectsSection } from "@/components/projects";
 
 const title = "Rabii Luena — Frontend Engineer & Product Builder";
 const description =
