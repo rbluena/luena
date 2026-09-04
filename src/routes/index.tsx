@@ -51,11 +51,11 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
+        <About />
+        <Principles />
         <SelectedWork />
         <Expertise />
         <Experience />
-        <About />
-        <Principles />
         <Contact />
       </main>
       <Footer />
