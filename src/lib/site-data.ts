@@ -50,9 +50,11 @@ export const projects: Project[] = [
       "OpenRouter",
     ],
     links: [
-      { label: "Live product", href: "#" },
-      { label: "Chrome Web Store", href: "#" },
-      { label: "Source code", href: "#" },
+      { label: "Live product", href: "https://andika.site" },
+      {
+        label: "Chrome Web Store",
+        href: "https://chromewebstore.google.com/detail/andika-ai/mpfdamjlkbalibemcfifpaleplkmfloo",
+      },
     ],
     highlights: [
       {
@@ -64,12 +66,8 @@ export const projects: Project[] = [
         body: "Provider-agnostic routing using OpenRouter and Vercel AI SDK.",
       },
       {
-        title: "Real-time sync",
-        body: "Convex keeps prompts and preferences synchronized.",
-      },
-      {
-        title: "Custom workflows",
-        body: "Users can define prompts and personalize their AI assistant.",
+        title: "Quick Command Bar",
+        body: "Fast, keyboard-driven interface for generating and editing text.",
       },
     ],
   },
@@ -89,10 +87,7 @@ export const projects: Project[] = [
       "Vercel AI SDK",
       "Tailwind CSS",
     ],
-    links: [
-      { label: "Live product", href: "#" },
-      { label: "Source code", href: "#" },
-    ],
+    links: [{ label: "Live product", href: "https://gapwise.site" }],
     highlights: [
       {
         title: "AI research pipeline",
@@ -153,6 +148,14 @@ export const expertise = [
 
 export const experience = [
   {
+    company: "Andika AI",
+    title: "Technical Founder",
+    period: "Sept 2025 — May 2026",
+    stack: ["Next.js", "Convex", "OpenRouter"],
+    description:
+      "Built the full product solo: Chrome Extension APIs, React UI, Convex backend, and multi-provider AI routing via OpenRouter and the Vercel AI SDK.",
+  },
+  {
     company: "Finotify",
     title: "Full-stack Developer",
     period: "Jun 2024 — Nov 2024",
@@ -164,14 +167,14 @@ export const experience = [
     company: "Bejamas",
     title: "Software Developer",
     period: "Sep 2021 — Apr 2022",
-    stack: ["GatsbyJS", "GraphQL", "Contentful"],
+    stack: ["GatsbyJS", "GraphQL", "Contentful", "TDD"],
     description: null,
   },
   {
-    company: "GreenRush.com",
+    company: "AM2 Studio",
     title: "Frontend Developer",
     period: "Jul 2018 — Mar 2020",
-    stack: ["React", "Redux Saga", "Google Maps API"],
+    stack: ["React", "Redux Saga", "Google Maps API", "TDD"],
     description: null,
   },
 ];
